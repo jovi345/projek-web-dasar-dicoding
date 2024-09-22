@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar {
+  background-color: black;
+  width: 100%;
+  padding: 20px 0;
+  position: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 35px;
+  font-weight: bold;
+  color: aliceblue;
+}
+.navbar .max-width .logo a span {
+  color: goldenrod;
+}
+
+.navbar #menu li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+}
+
+.navbar #menu li a {
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 45px;
+  transition: 0.3s ease;
+}
+
+.navbar #menu li a:hover {
+  color: goldenrod;
+}
+
+.navbar #menu li a:hover,
+.navbar #menu li a.active {
+  color: goldenrod;
+}
+
+.navbar #menu li a.active::after,
+.navbar #menu li a:hover::after {
+  content: '';
+  width: 35%;
+  height: 2px;
+  background-color: goldenrod;
+  position: absolute;
+  bottom: -3px;
+  left: 46px;
+}
+#quit {
+  display: none;
+}
+#mobile {
+  display: none;
+}
+
+.home {
+  display: flex;
+  background: url('gym/gym8.jpg') no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  min-height: 500px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+  margin: auto 200px 100px 0px;
+}
+
+.home-content {
+  font-size: 30px;
+  text-align: center;
+}
+
+#text1 {
+  color: goldenrod;
+}
+#text1,
+#text2 {
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.about {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  text-align: center;
+  margin: 50px 0;
+  border-bottom: 20px solid goldenrod;
+  border-top: 20px solid goldenrod;
+}
+
+#about {
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+
+.aboutcard {
+  margin: 20px auto;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.people {
+  border-radius: 20px;
+  width: 95%;
+}
+.product {
+  color: aliceblue;
+  border-bottom: 2px solid black;
+  border-radius: 20px;
+  overflow: auto;
+}
+
+#product {
+  color: black;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 100px;
+}
+
+.card {
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.card .right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#supplement {
+  background-image: url('gym/supp3.jpg');
+  height: 370px;
+  margin: 0 0 5px 0;
+}
+
+#liquid {
+  background-image: url('gym/liquid3.jpg');
+  height: 740px;
+}
+
+#realfood {
+  background-image: url('gym/food3.jpg');
+  height: 360px;
+  margin: 5px 0 0 0;
+}
+
+#supplement,
+#liquid,
+#realfood {
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  padding: 0px 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.product2 h2 {
+  padding: 0 0 20px 0;
+}
+
+.product2 p {
+  padding: 0 0 15px 0;
+}
+
+.product2 button {
+  background-color: rgba(255, 217, 0, 0.489);
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.68);
+}
+.product2 button:hover {
+  background-color: goldenrod;
+  cursor: pointer;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url('gym/banner.png');
+  background-position: 20% 30%;
+  background-color: #212101;
+  padding: 60px;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(253, 255, 240, 0.4);
+}
+
+#newsletter p span {
+  color: goldenrod;
+}
+
+#newsletter input {
+  width: 100%;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+  width: 30%;
+  background-color: goldenrod;
+  white-space: nowrap;
+  color: aliceblue;
+  font-weight: bold;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+#newsletter input,
+#newsletter button {
+  height: 3rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+aside {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.profil {
+  font-size: 12px;
+  margin: 0 70px;
+  text-align: center;
+}
+
+.profil .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#jovi {
+  width: 80px;
+  border-radius: 20%;
+}
+
+#cart {
+  width: 80px;
+  margin: 22px 0;
+}
+
+.social {
+  width: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(49, 39, 12);
+  color: aliceblue;
+  padding: 10px;
+}
+
+@media (max-width: 799px) {
+  ul#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0px;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #0e0e01;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  }
+  ul#menu.show {
+    right: 0px;
+  }
+
+  ul#menu li {
+    margin-bottom: 25px;
+  }
+  #quit {
+    display: flex;
+    position: absolute;
+    top: 35px;
+    left: 15px;
+  }
+  #mobile {
+    display: flex;
+  }
+  .home {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  .home-content {
+    display: none;
+  }
+
+  .product {
+    padding: 0px;
+  }
+
+  #supplement,
+  #liquid,
+  #realfood {
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #newsletter .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 540px) {
+  .navbar {
+    background-color: black;
+    width: 100%;
+    padding: auto;
+    position: none;
+  }
+  .navbar .max-width {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aboutcard {
+    margin: 20px auto;
+    padding: 2px;
+    flex-direction: column;
+  }
+
+  .people {
+    margin: 20px 0;
+  }
+
+  .card {
+    margin: 0 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product {
+    padding: 20px;
+  }
+
+  #supplement,
+  #liquid,
+  #realfood {
+    border-radius: 20px;
+    padding: 0px 30px;
+  }
+
+  .left-content {
+    margin-bottom: 10px;
+  }
+
+  aside {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #newsletter .form {
+    width: 100%;
+  }
+
+  #newsletter p {
+    font-size: 12px;
+  }
+
+  #newsletter input,
+  #newsletter button {
+    height: 2.5rem;
+    padding: 0 1em;
+    font-size: 12px;
+  }
+
+  @media (max-width: 290px) {
+    #newsletter .form {
+      width: 100%;
+    }
+    #newsletter input,
+    #newsletter button {
+      height: 1.5rem;
+      padding: 0 1em;
+      font-size: 8px;
+    }
+  }
+}
